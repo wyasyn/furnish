@@ -2,6 +2,7 @@ import { icons } from "@/constants/icons";
 import { navItems } from "@/constants/nav-items";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
+import Button from "./Button";
 
 export default function MobileNav() {
   const [open, setOpen] = useState(false);
@@ -53,6 +54,13 @@ export default function MobileNav() {
                 </li>
               ))}
             </motion.ul>
+            <div className=" mt-8 justify-center flex items-center gap-4 md:hidden">
+              <button>{icons.cart}</button>
+              <button className="flex items-center gap-1 mr-4">
+                {icons.globe} Eng
+              </button>
+              <Button text="Sign in" />
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

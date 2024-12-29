@@ -15,14 +15,14 @@ import {
 } from "lucide-react";
 
 export const icons = {
-  cart: <ShoppingBasket />,
-  globe: <Globe />,
-  search: <Search />,
-  circle: <Circle />,
-  circleStop: <CircleStop />,
-  plus: <Plus />,
-  minus: <Minus />,
-  plane: <SendHorizontal />,
+  cart: <ShoppingBasket className="w-5 h-5" />,
+  globe: <Globe className="w-5 h-5" />,
+  search: <Search className="w-5 h-5" />,
+  circle: <Circle className="w-5 h-5" />,
+  circleStop: <CircleStop className="w-5 h-5" />,
+  plus: <Plus className="w-5 h-5" />,
+  minus: <Minus className="w-5 h-5" />,
+  plane: <SendHorizontal className="w-5 h-5" />,
   lamp: <LampDesk />,
   menu: <Menu />,
   arrowRight: <ChevronRight />,
