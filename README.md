@@ -1,50 +1,86 @@
-# React + TypeScript + Vite
+# Furnish - E-commerce Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Furnish is a modern e-commerce platform designed for selling premium furniture, including beds, chairs, tables, and more. This repository contains the source code and assets for the Furnish website, enabling seamless browsing and shopping experiences.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design**: Optimized for all devices, including mobile, tablet, and desktop.
+- **Product Categories**: Explore a wide range of furniture, including beds, chairs, tables, and more.
+- **SEO Optimized**: Enhanced visibility on search engines with structured meta tags and clean URLs.
+- **Secure Payment Integration**: Support for various payment gateways.
+- **User-Friendly Navigation**: Intuitive UI for easy product discovery and checkout.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Frontend**: HTML5, JavaScript, React (powered by Vite), Tailwind CSS
+- **Backend**: Node.js, Express.js (or other backend framework if applicable)
+- **Database**: MongoDB / MySQL (based on implementation)
+- **Other Tools**: Git, pnpm, Vite
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Follow these steps to run the project locally:
+
+1. **Clone the Repository**:
+
+   ````bash
+   git clone https://github.com/wyasyn/furnish.git
+   cd furnish
+   ```bash
+
+   ````
+
+2. **Install Dependencies**:
+
+   ````bash
+   pnpm install
+   ```bash
+
+   ````
+
+3. **Run the Development Server**:
+
+   ```bash
+   pnpm dev
+   ```
+
+4. **Open in Browser**:
+
+   Visit `http://localhost:3000` to view the website locally.
+
+## Project Structure
+
+```
+Furnish/
+├── public/          # Static assets (images, icons, etc.)
+├── src/             # Source code
+│   ├── components/  # Reusable components (e.g., Navbar, Footer)
+│   ├── pages/       # Page-specific code (e.g., Home, Product Details)
+│   ├── styles/      # Tailwind CSS configuration and custom styles
+│   ├── utils/       # Utility functions
+│   └── main.jsx     # Entry point for the React app
+├── package.json     # Project metadata and dependencies
+├── README.md        # Project documentation
+└── index.html       # Main HTML file
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Contributing
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+We welcome contributions to improve Furnish! To contribute:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Commit your changes with clear descriptions.
+4. Push the branch and create a Pull Request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any inquiries or feedback, please contact us at [support@furnish.com](mailto:ywalum@gmail.com).
+
+---
+
+Happy Shopping with Furnish! 🎉
