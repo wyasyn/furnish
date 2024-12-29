@@ -1,0 +1,31 @@
+import {
+  ChevronLeft,
+  ChevronRight,
+  Circle,
+  CircleStop,
+  Globe,
+  LampDesk,
+  Menu,
+  Minus,
+  Plus,
+  Search,
+  SendHorizontal,
+  ShoppingBasket,
+  X,
+} from "lucide-react";
+
+export const icons = {
+  cart: <ShoppingBasket />,
+  globe: <Globe />,
+  search: <Search />,
+  circle: <Circle />,
+  circleStop: <CircleStop />,
+  plus: <Plus />,
+  minus: <Minus />,
+  plane: <SendHorizontal />,
+  lamp: <LampDesk />,
+  menu: <Menu />,
+  arrowRight: <ChevronRight />,
+  arrowLeft: <ChevronLeft />,
+  close: <X />,
+};

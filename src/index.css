@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("/fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("/fonts/Roboto/Roboto-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("/fonts/Roboto/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+:root {
+  --background: 300 20% 99%;
+  --foreground: 212 27% 19%;
+  --secondary: 0 0% 97%;
+  --primary: 25 99% 53%;
+  --muted: 0 1% 67%;
+  --accent: 213 68% 69%;
+  --black: 0 0% 1%;
+  --success: 115 79% 44%;
+  --border: 30 14% 92%;
+  --font-sans: "Roboto", sans-serif;
+}
+
+@layer base {
+  * {
+    @apply box-border border-border;
+  }
+  body {
+    @apply bg-background text-muted text-sm font-sans;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply mx-auto px-2 max-w-[1200px];
+  }
+}
