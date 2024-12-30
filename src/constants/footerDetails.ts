@@ -7,7 +7,11 @@ export const footerDetails = {
     "At Furnish, we believe that every space has the potential to come alive with the right furniture.",
   siteInfo: [
     { title: "Products", links: ["Home", "Living Room", "Bedroom", "Kitchen"] },
-    { title: "About Us", links: ["Company", "Press", "Careers"] },
+    { title: "About Us", links: ["Company", "Press", "Careers", "Contacts"] },
     { title: "Help", links: ["FAQ", "Shipping", "Returns"] },
+    {
+      title: "Legal info",
+      links: ["Privacy Policy", "Terms & Conditions"],
+    },
   ],
 };

@@ -19,7 +19,7 @@ export default function Footer() {
               <p className="text-muted/60">{footerDetails.email}</p>
             </div>
 
-            <div className="mt-6 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 md:grid-cols-4">
               {footerDetails.siteInfo.map((info) => {
                 return (
                   <div key={info.title}>
