@@ -1,31 +1,22 @@
 import { movingImages } from "@/constants/movingImages";
 import { motion } from "motion/react";
+import ImageWithBlur from "./ImageWithBlur";
 
 export default function MovingImages() {
   return (
     <div className="relative overflow-hidden fade-mask">
       <motion.div
         className="flex items-center gap-12 py-14"
-        animate={{ x: ["0%", "-100%"] }}
+        animate={{ x: ["0%", "-50%"] }} // Move halfway to seamlessly loop
         transition={{
           repeat: Infinity,
           duration: 40,
           ease: "linear",
         }}
+        style={{ display: "flex", width: "200%" }} // Container twice as wide as needed
       >
         {movingImages.concat(movingImages).map((image, index) => (
-          <div
-            key={index}
-            className={`w-[350px] shrink-0 aspect-[4/3] overflow-hidden hover:scale-110 hover:rotate-3 duration-300 ease-in-out transition-all rounded-lg ${
-              index % 2 === 0 ? "rotate-6" : "-rotate-6"
-            }`}
-          >
-            <img
-              src={image}
-              alt={image}
-              className="object-cover w-full h-full"
-            />
-          </div>
+          <ImageWithBlur key={index} image={image} index={index} />
         ))}
       </motion.div>
     </div>
